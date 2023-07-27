@@ -3,3 +3,14 @@
 // символам. Первоначальный массив можно ввести с клавиатуры, либо задать 
 // на старте выполнения алгоритма. При решении не рекомендуется пользоваться 
 // коллекциями, лучше обойтись исключительно массивами.
+
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Введите элементы массива, разделенные пробелом:");
+        string input = Console.ReadLine();
+        string[] inputArray = input.Split(' ');
+        
