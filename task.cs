@@ -13,7 +13,8 @@ public class Program
         Console.WriteLine("Введите элементы массива, разделенные пробелом:");
         string input = Console.ReadLine();
         string[] inputArray = input.Split(' ');
-       string[] outputArray = FilterArrayByLength(inputArray, 3);
+
+        string[] outputArray = FilterArrayByLength(inputArray, 3);
 
         Console.WriteLine("Результат:");
         foreach (string str in outputArray)
@@ -21,3 +22,15 @@ public class Program
             Console.WriteLine(str);
         }
     }
+     public static string[] FilterArrayByLength(string[] inputArray, int maxLength)
+    {
+        int count = 0;
+        for (int i = 0; i < inputArray.Length; i++)
+        {
+            if (inputArray[i].Length <= maxLength)
+            {
+                count++;
+            }
+        }
+    }
+}
