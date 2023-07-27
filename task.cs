@@ -13,4 +13,11 @@ public class Program
         Console.WriteLine("Введите элементы массива, разделенные пробелом:");
         string input = Console.ReadLine();
         string[] inputArray = input.Split(' ');
-        
+       string[] outputArray = FilterArrayByLength(inputArray, 3);
+
+        Console.WriteLine("Результат:");
+        foreach (string str in outputArray)
+        {
+            Console.WriteLine(str);
+        }
+    }
